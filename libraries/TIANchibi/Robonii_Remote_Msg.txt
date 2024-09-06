@@ -1,0 +1,196 @@
+Lentgh size: 31
+Char: 0 : 1F : 31		
+Char: 1 : 61 : 97		
+Char: 2 : CC : 204
+Char: 3 : 2A : 42
+Char: 4 : FE : 254
+Char: 5 : 22 : 34
+Char: 6 : F : 15
+Char: 7 : 1F : 31
+Char: 8 : 0 : 0
+Char: 9 : 0 : 0
+Char: 10 : 0 : 0
+Char: 11 : D5 : 213
+Char: 12 : 25 : 37
+Char: 13 : 0 : 0
+Char: 14 : 8B : 139
+Char: 15 : 16 : 22
+Char: 16 : 0 : 0
+Char: 17 : 0 : 0
+Char: 18 : 1 : 1
+Char: 19 : D5 : 213
+Char: 20 : 25 : 37
+Char: 21 : 0 : 0
+Char: 22 : A0 : 160
+Char: 23 : 3 : 3
+Char: 24 : 1 : 1
+Char: 25 : 1 : 1
+Char: 26 : 75 : 117
+Char: 27 : A : 10
+Char: 28 : 0 : 0
+Char: 29 : 7F : 127
+Char: 30 : 7C : 124
+Text Length: 11
+
+Char: 0 : 1F : 31	Total Length.....
+Char: 1 : 61 : 97	Frame Control Field    SrcAddrMode
+Char: 2 : CC : 204	Frame Control Field  DstAddrSpec->AddrMode;
+Char: 3 : 2C : 44 --------------------- counter?
+Char: 4 : FE : 254	PAN ID
+Char: 5 : 22 : 34	PAN ID
+Char: 6 : F : 15	Mac1	Robonii Serial Number	Destination
+Char: 7 : 1F : 31	Mac1	Robonii Serial Number
+Char: 8 : 0 : 0		Mac1	Robonii Serial Number
+Char: 9 : 0 : 0		Mac1	Robonii Serial Number
+Char: 10 : 0 : 0	Mac1  (Robot? or Remote?) - Robot = 0 - lyk so.....
+Char: 11 : D5 : 213	Mac1 Fixed for Robonii
+Char: 12 : 25 : 37	Mac1 Fixed for Robonii
+Char: 13 : 0 : 0	Mac1 MSB Fixed for Robonii
+Char: 14 : 8B : 139	Mac2	Robonii Serial Number	Source
+Char: 15 : 16 : 22	Mac2	Robonii Serial Number
+Char: 16 : 0 : 0	Mac2	Robonii Serial Number
+Char: 17 : 0 : 0	Mac2	Robonii Serial Number
+Char: 18 : 1 : 1	Mac2  (Robot? or Remote?)   - Remote = 1 - lyk so.....
+Char: 19 : D5 : 213	Mac2 Fixed for Robonii
+Char: 20 : 25 : 37	Mac2 Fixed for Robonii
+Char: 21 : 0 : 0	Mac2 MSB Fixed for Robonii
+Char: 22 : A0 : 160		Header Value =A0
+Char: 23 : 3 : 3		Length
+Char: 24 : 3 : 3 -------c_status.handle++
+Char: 25 : 1 : 1		DEVTYPE_REMOTE = 1
+Char: 26 : 75 : 117		CalculateCRC
+Char: 27 : A : 10		data
+Char: 28 : 0 : 0		data
+Char: 29 : 7F : 127		data
+Char: 30 : 8B : 139		?? Raai CRC ... Need 2 bytes??
+
+
+Header Value =A0
+Length
+ c_status.handle++
+DEVTYPE_REMOTE = 1
+CalculateCRC
+
+
+ if (wpan_mcps_data_req( WPAN_ADDRMODE_LONG, &dst_addr_info, 
+	                    msgLength, TxBuffer, c_status.handle, acks_disabled_flag == false ? WPAN_TXOPT_ACK : WPAN_TXOPT_OFF) == false)
+
+		
+REMOTE:		
+Lentgh size: 31
++++  1F 61 CC 2A FE 22 F 1F 0 0 0 D5 25 0 8B 16 0 0 1 D5 25 0 A0 3 1 1 75 A 0 7F 7C ----
+Text Length: 11
+
+Lentgh size: 31
++++  1F 61 CC 2C FE 22 F 1F 0 0 0 D5 25 0 8B 16 0 0 1 D5 25 0 A0 3 3 1 75 A 0 7F 8B ----
+
+Lentgh size: 31
++++  1F 61 CC 2F FE 22 F 1F 0 0 0 D5 25 0 8B 16 0 0 1 D5 25 0 A0 3 6 1 75 A 0 7F D4 ----
+
+MaX 6: aÌ+þ"
+Lentgh size: 28
++++  1C 61 CC 2B FE 22 F 1F 0 0 0 D5 25 0 8B 16 0 0 1 D5 25 0 A5 0 2 1 0 44 ----
+
+	
+
+Robot (unpaired)
+Lentgh size: 28
++++  1C 61 CC E2 FE 22 FF FF FF FF FF FF FF FF 1 0 0 0 0 D5 25 0 A5 0 7 2 0 BC ----
+
+Lentgh size: 28
++++  1C 61 CC E3 FE 22 FF FF FF FF FF FF FF FF 1 0 0 0 0 D5 25 0 A5 0 8 2 0 3F ----
+
+
+Lentgh size: 28
++++  1C 61 CC E4 	FE 22 	FF FF FF FF FF FF FF FF 	1 0 0 0 0 D5 25 0 	A5 0 9 2 0 2E ----
+
+
+Lentgh size: 37
++++  25 61 CC 81    FE 22   FF FF FF FF FF FF FF FF 	1 0 0 0 0 D5 25 0 	A6 9 A 2 3 0 0 0 0 0 0 0 0 3 	BE ----
+			Counter PANID	Destination 				Own mac				Message	??						CRC
+
+	
+Remote Pair Message
+
+Lentgh size: 30
++++  1E 41 C8 2B FE 22 FF FF 8B 16 0 0 1 D5 25 0 B5 0 2 1 0 0 0 0 0 0 0 0 0 4E ----
+
+
+Lentgh size: 30
++++  1E 41 C8 2C FE 22 FF FF 8B 16 0 0 1 D5 25 0 B5 0 3 1 0 0 0 0 0 0 0 0 0 4D ----
+
+
++++  1E 41 C8 2D FE 22 FF FF 8B 16 0 0 1 D5 25 0 B5 0 4 1 0 0 0 0 0 0 0 0 0 FB ----
+
+Robot stuur niks in pair mode????
+
+
+Robot - na Paired remote.... Soek
+
+Lentgh size: 28
++++  1C 61 CC 5E 	FE 22 	8B 16 0 0 1 D5 25 0 	1 0 0 0 0 D5 25 0 	A5 0 2D 2 0 21 ----
+I'll 
+
+Lentgh size: 28
++++  1C 61 CC 61 	FE 22 	8B 16 0 0 1 D5 25 0 	1 0 0 0 0 D5 25 0 	A5 0 30 2 0 2A ----
+
+Lentgh size: 28
++++  1C 61 CC 62 	FE 22 	8B 16 0 0 1 D5 25 0 	1 0 0 0 0 D5 25 0 	A5 0 31 2 0 3A ----
+
+Lentgh size: 28
++++  1C 61 CC 2D 	FE 22 	8B 16 0 0 1 D5 25 0 	1 0 0 0 0 D5 25 0 	A5 0 33 2 0 3B ----
+
+
+
+Robot na remote - command
+1  2   3  4  5  6   7 8 9 10 11 12 13   14 15 16 17 18  19 20 21   22 23 24    25 26 27 28 29 30   31  32 33 44 35 36  37  38 39    40 41 42    43 44 45 46 
+61 CC 9A FE 22 	8B 16 0 0 1 D5 25 0 	1 0 0 0 0    	D5 25 0 	A0 13 64 	2 5E A 	51 55 15 	10 0 0 	 4 0 11 	55 54 54 	45 55 54 	50 1 0 B4
+
+61 CC AE FE 22 	8B 16 0 0 1 D5 25 0 	1 0 0 0 0    	D5 25 0 	A0 13 78 	2 5E A 	51 55 15 	10 0 0 	 4 0 11 	55 
+54 54 	45 55 54 	50 1 0 5F
+
+ 1  2  3  4     5  6    7  8  9 10 11  12 13 14 15 16 17 18 19 20 21 22     23 24 25 26 27 28 29 30 31 32  33 34 35 36  37 38 39 40 41 42 43 44	45 46   47
+ 2F 61 CC CD 	FE 22 	8B 16 0 0 1 D5 25 0 	1  0  0  0  0  D5 25 0 		A0 13 A3 2 5E A 51 55 15 10 	0 0 4 0 	11 55 54 54 45 55 54 50 1  0 	B9
+
+  
+    61 CC 6F 	FE 22 	8B 16 0 0 1 D5 25 0 	1  0  0  0  0  D5 25 0 		A0 13 A3 2 2C A  0 40  5  0 	0 0 0 0 	0  0  0   0 51  0 54 50 2A 0 1C 5F
+ 
+Remote na robot
+61 CC 70 FE 22 	1 0 0 0 0 D5 25 0 8B 	16 0 0 1 D5 25 0 	A0 3 47 1 75 A 0 7F F7
+
+61 CC 76 FE 22 	1 0 0 0 0 D5 25 0 8B 	16 0 0 1 D5 25 0 	A0 3 4D 1 75 A 0 7F 58
+
+==================================
+Device avvailable
+1C 61 CC 50 FE 22 8B 16 0 0 1 D5 25 0 1 0 0 0 0 D5 25 0 A7 0 E3 2 0 A3
+
+1C 61 CC 2A FE 22 8B 16 0 0 1 D5 25 0 1 0 0 0 0 D5 25 0 A7 0 1 2 0 68
+
+1C 61 CC FA FE 22 8B 16 0 0 1 D5 25 0 1 0 0 0 0 D5 25 0 A7 0 23 2 0 64
+
+1C 61 CC 2 FE 22 1 0 0 0 0 D5 25 0 8B 16 0 0 1 D5 25 0 A7 0 E3 2 0 56
+
+#define COMMS_A0	0xA0	/**< Standard data payload */
+#define COMMS_A1	0xA1	/**< Request an association lookup table (Discover) */
+#define COMMS_A2	0xA2	/**< Refresh association lookup tables */
+#define COMMS_A3	0xA3	/**< Send MAC address */
+#define COMMS_A4	0xA4	/**< Complete a pairing request */
+#define COMMS_A5	0xA5	/**< Send search request for paired device */
+/** Send a signal to the remote control to broadcast a sync system signal */
+#define COMMS_A6	0xA6	
+#define COMMS_A7	0xA7	/**< Send a search MAC address reply */
+#define COMMS_A8	0xA8	/**< Send a game sync mode reply */
+#define COMMS_AF	0xAF	/**<Send a signal to a robot to perform a hardware reboot */
+
+#define COMMS_B0	0xB0	/**< Standard data payload */
+#define COMMS_B1	0xB1	/**< New coordinator joined the PAN */
+#define COMMS_B2	0xB2	/**< Refresh association lookup tables */
+#define COMMS_B3	0xB3	/**< Request association lookup tables */
+#define COMMS_B4	0xB4	/**< Leave the network */
+#define COMMS_B5	0xB5	/**< Send pairing request */
+#define COMMS_B6	0xB6	/**< Zigbee syncing */
+#define COMMS_B7	0xB7	/**< Send a game sync broadcast discovery message */
+#define COMMS_B8	0xB8	/**< Send a game sync disable force request */
+#define COMMS_BF	0xBF	/**< Send a signal to all robots to reboot */
+				
+						

@@ -1,0 +1,44 @@
+#######################################
+# Syntax Coloring Map Servo
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ROBONII_LED_OFF	LITERAL1
+ROBONII_LED_RED	LITERAL1
+ROBONII_LED_GREEN	LITERAL1
+ROBONII_LED_YELLOW	LITERAL1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+D1_LED	KEYWORD2
+D2_LED	KEYWORD2
+D3_LED	KEYWORD2
+D4_LED	KEYWORD2
+D5_LED	KEYWORD2
+
+D1_Green	KEYWORD2
+D2_Green	KEYWORD2
+D3_Green	KEYWORD2
+D4_Green	KEYWORD2
+D5_Green	KEYWORD2
+
+D1_Red	KEYWORD2
+D2_Red	KEYWORD2
+D3_Red	KEYWORD2
+D4_Red	KEYWORD2
+D5_Red	KEYWORD2
+
+LED_ON	LITERAL1
+LED_OFF	LITERAL1
+
+set_ROBONII_LED	KEYWORD2
+init_Bumpers	KEYWORD2
+init_LED	KEYWORD2
+knight_Rider	KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################

@@ -18,4 +18,18 @@ I have no plans for this robot.
  
 * I have included the Tianchibi Robonii project files, I honestly have no idea where they came from originally, I tried to find them again, and didn't have any luck.  
 
+-----------
+
+Sept. 6, 2024 I found the Tianchibi library file with in the archive of the IDE Robonii provided. Also it appears this is probably where I found the original TiANchibi_Robonii_Project_Files at.  
+I added pictures of the inside of the robot.  
+And pulled the libraries out and placed them here.  
+Also I tried to find the schematics, with no luck. I looked up the FCC ID number on fccid.io.  
+https://fccid.io/XL7-ROBONI-I  
+It wasn't really all that helpful, the remote controller (which I don't have) appears to be in the 2.4-2.4835Ghz range (and maybe Zigbee?)  
+One document didn't outright say it was, but had Zigbee as a foot-note. So I don't know.  
+The RFID maybe 125.14-127.9Khz this frequency is listed on the FCCID website.  
+
+That is all I know for now.  
+
+
 
