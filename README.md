@@ -32,4 +32,7 @@ The RFID maybe 125.14-127.9Khz this frequency is listed on the FCCID website.
 That is all I know for now.  
 
 
+---------
+2nd update for Sept 6 - added Docs for the ATmega/ATMel chips, and the user manual for the robot  
+
 
